@@ -416,3 +416,12 @@ p:last-child { margin-bottom: 0; }
 .form-status:empty { display: none; }
 .article-card { display: flex; flex-direction: column; }
 .article-card .article-meta { margin-top: auto; padding-top: 14px; }
+
+
+/* ===== Bande terrain + photo À propos (27 oct.) ===== */
+.about-photo { aspect-ratio: 4/5; object-fit: cover; object-position: center 12%; width: 100%; }
+.terrain-band { position: relative; overflow: hidden; }
+.terrain-band img { width: 100%; height: 430px; object-fit: cover; object-position: center 22%; display: block; }
+.terrain-band-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(90deg, rgba(14,28,49,0.72), rgba(14,28,49,0.25) 60%, rgba(14,28,49,0.05)); padding: 24px; }
+.terrain-band-overlay p { font-family: var(--font-display); font-style: italic; color: var(--white); font-size: clamp(1.4rem, 3.2vw, 2.3rem); text-align: center; max-width: 760px; line-height: 1.35; }
+@media (max-width: 700px) { .terrain-band img { height: 320px; } }
