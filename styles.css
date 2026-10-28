@@ -411,3 +411,8 @@ p:last-child { margin-bottom: 0; }
     .hero-photo { max-width: 340px; margin: 0 auto; }
     .tl-item { grid-template-columns: 1fr; gap: 4px; }
 }
+
+/* ===== Corrections symétrie (QA 27 oct.) ===== */
+.form-status:empty { display: none; }
+.article-card { display: flex; flex-direction: column; }
+.article-card .article-meta { margin-top: auto; padding-top: 14px; }
